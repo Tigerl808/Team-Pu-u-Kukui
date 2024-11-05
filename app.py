@@ -35,5 +35,22 @@ def main():
     
     m.to_streamlit(height=500)
 
+# -----------------------------------------------------------------------------
+
+ #Tiger testing mysql connection11/2
+conn = st.connection('mysql', type='sql')
+st.write("Testing connection ok")
+# Perform query.
+df = conn.query('SELECT * from population_cover;', ttl=6)
+st.write("query ok")
+# Print results.
+for row in df.itertuples():
+    st.write(row.County + " population " + str(row.Population))
+
+
+st.write("data ok")
+# -----------------------------------------------------------------------------
+
+
 if __name__ == "__main__":
     main()
