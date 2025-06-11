@@ -607,13 +607,14 @@ def main():
         """
     )
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2
+    show_budget_card(col1)
     show_device_access_card(col1)
     show_digital_literacy_card(col1)
-    show_open_data_card(col1)
+    show_open_data_card(col2)
     show_broadband_card(col2)
     show_attendance_card(col1)
-    show_budget_card(col2)
+  
     show_user_feedback_card(col2)
     show_sample_data_table()
     show_digital_equity_card()
