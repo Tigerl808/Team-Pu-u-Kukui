@@ -5,9 +5,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import streamlit_shadcn_ui as ui
+import seaborn as sns
 
 from st_circular_progress import CircularProgress
 from style_helper import apply_custom_style
+import pandas as pd
 
 @st.cache_data
 def fetch_broadband_data():
@@ -44,6 +46,34 @@ def fetch_feedback_data():
         FROM user_feedback;
         """, ttl=6)
     return df
+
+def fetch_budget_data():
+    data = pd.read_csv("data/budget.csv")
+
+    # Clean column names
+    data.columns = data.columns.str.strip().str.replace('/', '_')
+    
+    # Filter out Total rows for per-category breakdown
+    category_data = data[data['Category'] != 'Total']
+    total_data = data[data['Category'] == 'Total']
+    return category_data, total_data
+
+def fetch_attendance_data():
+  df = pd.read_csv("data/Tbl_RegAttend.csv")
+
+  # Remove completely empty columns (extra commas at the end of CSV)
+  df = df.dropna(axis=1, how='all')
+
+  # Filter to rows where Island == "Total"
+  df = df[df["Island"] == "Total"].copy()
+
+  # Clean column names
+  df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('/', '_')
+  
+  # Convert all columns that can be numeric
+  for col in df.columns:
+    df[col] = pd.to_numeric(df[col], errors='ignore')  # keep strings like 'Island', 'textDate'
+  return df
 
 def get_header_style():
     # Define the style for the card and header
@@ -439,6 +469,131 @@ def show_income_distribution_card():
         </div>
     """, unsafe_allow_html=True)
 
+def show_sample_data_table():
+    # Set up a blue header style for the card
+    header_style = get_header_style()
+    
+    # Display the custom styles in Streamlit
+    st.markdown(header_style, unsafe_allow_html=True)
+    # Create a card layout with a blue header
+    create_card_header("Business Intelligence:", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/money-dollar-circle-line.png")
+
+    # Load the JSON data
+    df = pd.read_json('data/sample.json')
+
+    # Displaying the DataFrame with 'Filed Date' included
+    st.write("Sample Data table")
+    st.dataframe(df)
+    st.markdown("""</div>""", unsafe_allow_html=True)
+
+    # Close the card div
+    # Add the footer with "Read more about it" and a button
+    st.markdown("""
+            </div>
+            <div class="card-footer">
+                <span class="card-footer-text">Explore Dataset</span>
+                <a href="/sample_data_table" target="_self" class="card-footer-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 12l-12-9v5h-12v8h12v5l12-9z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # Close the card footer and card div
+    st.markdown("""
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+def show_budget_card(col):
+    # Set up a blue header style for the card
+    header_style = get_header_style()
+
+    with col:
+        # Display the custom styles in Streamlit
+        st.markdown(header_style, unsafe_allow_html=True)
+        # Create a card layout with a blue header
+        create_card_header("Budget", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/money-dollar-circle-line.png")
+
+        _, total_data = fetch_budget_data()
+
+        fig, ax = plt.subplots()
+        ax.bar(total_data['Date'], total_data['Budgeted'], label='Budgeted', alpha=0.6)
+        ax.bar(total_data['Date'], total_data['Used'], label='Used')
+        ax.set_ylabel("Amount ($)")
+        ax.set_title("Total Budget vs Used")
+        ax.legend()
+        st.pyplot(fig)
+
+        # Add the footer with "Read more about it" and a button
+        st.markdown("""
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">Read more about it</span>
+                    <a href="/budget" target="_self" class="card-footer-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M24 12l-12-9v5h-12v8h12v5l12-9z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+    
+        # Close the card footer and card div
+        st.markdown("""
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+
+def show_attendance_card(col):
+    # Set up a blue header style for the card
+    header_style = get_header_style()
+
+    with col:
+        # Display the custom styles in Streamlit
+        st.markdown(header_style, unsafe_allow_html=True)
+        # Create a card layout with a blue header
+        create_card_header("Attendance", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/user-line.png")
+
+        df_total = fetch_attendance_data()
+
+        # Drop rows with missing data in required columns
+        df_total = df_total.dropna(subset=["Marketing_and_Outreach", "Attend_Rate"])
+
+        fig, ax = plt.subplots()
+        sns.regplot(
+            x=df_total["Marketing_and_Outreach"],
+            y=df_total["Attend_Rate"],
+            ax=ax,
+            scatter_kws={"s": 40}
+        )
+        ax.set_title("Attend Rate vs Marketing and Outreach")
+        ax.set_xlabel("Marketing and Outreach")
+        ax.set_ylabel("Attend Rate")
+        st.pyplot(fig)
+
+        # Add the footer with "Read more about it" and a button
+        st.markdown("""
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">Read more about it</span>
+                    <a href="/attendance" target="_self" class="card-footer-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M24 12l-12-9v5h-12v8h12v5l12-9z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+    
+        # Close the card footer and card div
+        st.markdown("""
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+
 def main():
     apply_custom_style(suppress_anchor=True)
     
@@ -456,7 +611,10 @@ def main():
     show_digital_literacy_card(col1)
     show_open_data_card(col1)
     show_broadband_card(col2)
+    show_attendance_card(col1)
+    show_budget_card(col2)
     show_user_feedback_card(col2)
+    show_sample_data_table()
     show_digital_equity_card()
     show_income_distribution_card()
 
