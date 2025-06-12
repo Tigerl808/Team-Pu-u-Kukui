@@ -561,18 +561,18 @@ def show_attendance_card(col):
         df_total = fetch_attendance_data()
 
         # Drop rows with missing data in required columns
-        df_total = df_total.dropna(subset=["Marketing_and_Outreach", "Attend_Rate"])
+        df_total = df_total.dropna(subset=["Total", "Registered"])
 
         fig, ax = plt.subplots()
         sns.regplot(
-            x=df_total["Marketing_and_Outreach"],
-            y=df_total["Attend_Rate"],
+            x=df_total["Registered"],
+            y=df_total["Total"],
             ax=ax,
             scatter_kws={"s": 40}
         )
-        ax.set_title("Attend Rate vs Marketing and Outreach")
-        ax.set_xlabel("Marketing and Outreach")
-        ax.set_ylabel("Attend Rate")
+        ax.set_title("Total vs Registered")
+        ax.set_xlabel("Registered")
+        ax.set_ylabel("Total")
         st.pyplot(fig)
 
         # Add the footer with "Read more about it" and a button
