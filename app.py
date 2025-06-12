@@ -614,9 +614,9 @@ def main():
     show_open_data_card(col2)
     show_digital_literacy_card(col1)
     show_device_access_card(col2)
-    show_user_feedback_card(col1)
+    show_user_feedback_card()
     show_sample_data_table()
-    show_digital_equity_card(col2)
+    show_digital_equity_card()
     show_income_distribution_card()
 
 if __name__ == "__main__":
