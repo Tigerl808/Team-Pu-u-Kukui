@@ -593,7 +593,7 @@ def show_attendance_card(col):
         df_total = fetch_attendance_data()
 
         # Drop rows with missing data in required columns
-        df_total = df_total.dropna(subset=["Total Expense $", "Registered"])
+        df_total = df_total.dropna(subset=["Total", "Registered"])
 
         fig, ax = plt.subplots()
         sns.regplot(
