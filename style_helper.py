@@ -111,7 +111,7 @@ def apply_custom_style(suppress_anchor=False):
       </div>
       <div class="header-image">
           <a href="./" target="_self">
-              <img src="https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/hawaii.png" alt="Header Image">
+              <img src="https://raw.githubusercontent.com/Tigerl808/Team-Pu-u-Kukui/refs/heads/main/images/Aloha_white2.png" alt="Header Image">
           </a>
       </div>
   </div>
