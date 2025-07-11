@@ -518,7 +518,7 @@ def show_budget_card(col):
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         # Create a card layout with a blue header
-        create_card_header("Budget")
+        create_card_header("HSPLS Digital Literacy Classes Budget")
 
         _, total_data = fetch_budget_data()
 
@@ -552,7 +552,7 @@ def show_survey_results_card(col):
     header_style = get_header_style()
     with col:
         st.markdown(header_style, unsafe_allow_html=True)
-        create_card_header("Survey Results (Digital Literacy Classes)")
+        create_card_header("HSPLS Digital Literacy Classes Survey Results")
 
         df3 = pd.read_excel("data/SurveyClass3.xlsx", engine="openpyxl")
         df4 = pd.read_excel("data/SurveyClass4.xlsx", engine="openpyxl")
@@ -591,7 +591,7 @@ def show_attendance_card(col):
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         # Create a card layout with a blue header
-        create_card_header("Attendance")
+        create_card_header("HSPLS Digital Literacy Classes Attendance")
 
         df_total = fetch_attendance_data()
 
@@ -605,9 +605,9 @@ def show_attendance_card(col):
             ax=ax,
             scatter_kws={"s": 40}
         )
-        ax.set_title("Total vs Registered")
-        ax.set_xlabel("Registered")
-        ax.set_ylabel("Total")
+        ax.set_title("Total Expenses vs Registered User Count")
+        ax.set_xlabel("Registered User Count")
+        ax.set_ylabel("Total Expenses $")
 
         # Format y-axis as $20K, $40K, etc.
         ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"${int(x/1000)}K"))
