@@ -593,6 +593,20 @@ def show_attendance_card(col):
         # Create a card layout with a blue header
         create_card_header("HSPLS Digital Literacy Classes Attendance")
 
+           # Add the description 
+        st.markdown("""
+                
+                <div class="card-footer">
+                    <span class="card-footer-text">  The WDD-Hi Digital Work Skills project, in partnership with the Hawaii State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential digital literacy skills such as using email, browsing the internet, and ensuring online safety.
+
+                    </span>
+
+                </div>
+            
+        """, unsafe_allow_html=True)
+        
+
+      
         df_total = fetch_attendance_data()
 
         # Drop rows with missing data in required columns
