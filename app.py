@@ -601,7 +601,9 @@ def show_attendance_card(col):
 State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering
 free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential 
 digital literacy skills such as using email, browsing the internet, and ensuring online safety.
-                    </br>In our analysis, the regression factors are: Date, Island, Branches, Classes_scheduled, Registered, Attended, Attend_Rate. 
+                    </br>In our analysis, the regression factors are Attendance Data: Date, Island, Branches, Classes_scheduled, Registered, Attended, Attend_Rate, 
+                    against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, Total_expense.
+
               </div>
         """, unsafe_allow_html=True)
          # End the description 
