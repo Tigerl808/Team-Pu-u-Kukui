@@ -605,10 +605,8 @@ digital literacy skills such as using email, browsing the internet, and ensuring
                   <div class="card-footer">
                     <span class="card-footer-text">In our analysis, the regression factors are: Date, Island, Branches, Classes_scheduled, Registered, Attended, Attend_Rate. 
 
-                </div>
-            
         """, unsafe_allow_html=True)
-        
+         # End the description 
 
       
         df_total = fetch_attendance_data()
