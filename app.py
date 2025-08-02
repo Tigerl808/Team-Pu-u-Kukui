@@ -650,11 +650,6 @@ digital literacy skills such as using email, browsing the internet, and ensuring
             </div>
         """, unsafe_allow_html=True)
 
-
-   #about me tab     
-
-
-
 def main():
     apply_custom_style(suppress_anchor=True)
     
