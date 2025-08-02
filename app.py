@@ -604,7 +604,7 @@ digital literacy skills such as using email, browsing the internet, and ensuring
                     </br>In our analysis, the regression factors are Attendance Data: Date, Island, Branches, Classes_scheduled, Registered, Attended, and Attend_Rate 
                     against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, and Total_expense.
 
-              
+              </div>
         """, unsafe_allow_html=True)
          # End the description 
 
