@@ -676,13 +676,7 @@ digital literacy skills such as using email, browsing the internet, and ensuring
         """, unsafe_allow_html=True)
          # End the description 
        
-        # Add the footer with "Read more about it" and a button
-        st.markdown("""
-                </div>
-              
-            </div>
-        """, unsafe_allow_html=True)
-        
+    
         # Close the card footer and card div
         st.markdown("""
                 </div>
