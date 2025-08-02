@@ -649,6 +649,37 @@ digital literacy skills such as using email, browsing the internet, and ensuring
                 </div>
             </div>
         """, unsafe_allow_html=True)
+   #about me tab     
+def show_About_me(col):
+    # Set up a blue header style for the card
+    header_style = get_header_style()
+
+    with col:
+        # Display the custom styles in Streamlit
+        st.markdown(header_style, unsafe_allow_html=True)
+        
+        # Create a card layout with a blue header
+        create_card_header("About Us")
+        
+        st.subheader("About us")
+        
+        # 
+        
+        # Close the card div
+        # 
+        st.markdown("""
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">About us Burt Lum ....,,,,</span>
+               
+        """, unsafe_allow_html=True)
+        
+        # Close the card footer and card div
+        st.markdown("""
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+
 
 def main():
     apply_custom_style(suppress_anchor=True)
