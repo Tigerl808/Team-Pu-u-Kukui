@@ -652,22 +652,7 @@ digital literacy skills such as using email, browsing the internet, and ensuring
 
 
    #about me tab     
-def show_About_me(col):
-    header_style = get_header_style()
-    with col:
-        st.markdown(header_style, unsafe_allow_html=True)
-        create_card_header("About us")
 
-
-        st.markdown("""</div>""", unsafe_allow_html=True)
-        st.markdown("""
-                </div>
-                <div class="card-footer">
-                    <span class="card-footer-text">about burt</span>
-                
-                </div>
-            </div>
-        """, unsafe_allow_html=True)
 
 
 def main():
