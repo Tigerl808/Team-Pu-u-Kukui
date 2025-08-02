@@ -659,11 +659,7 @@ def show_about_us(tab):
     
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
-    
         create_card_header("About Us")
-    
-      
-        
         # Close the card div
         # Add the footer with "Read more about it" and a button
         st.markdown("""
