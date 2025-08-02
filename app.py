@@ -703,7 +703,7 @@ def main():
         """
     )
 
-    tab1, tab2, tab3, tab4 = st.tabs(["HSPLS Overview", "Broadband Equity", "Digital Transparency", "Accessibility"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["HSPLS Overview", "Broadband Equity", "Digital Transparency", "Accessibility", "About Us"])
     
     show_attendance_card(tab1)
     show_survey_results_card(tab1)
@@ -719,6 +719,8 @@ def main():
 
     show_device_access_card(tab4)
     show_user_feedback_card(tab4)
+
+show_about_us(tab5)
 
 if __name__ == "__main__":
     main()
