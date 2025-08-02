@@ -675,8 +675,6 @@ digital literacy skills such as using email, browsing the internet, and ensuring
               
         """, unsafe_allow_html=True)
          # End the description 
-
-      
        
         # Add the footer with "Read more about it" and a button
         st.markdown("""
@@ -719,8 +717,8 @@ def main():
 
     show_device_access_card(tab4)
     show_user_feedback_card(tab4)
-
-show_about_us(tab5)
+    
+    show_about_us(tab5)
 
 if __name__ == "__main__":
     main()
