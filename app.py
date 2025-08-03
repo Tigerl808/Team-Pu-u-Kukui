@@ -650,7 +650,7 @@ def show_about_us(col):
     # Create a card layout with a blue header
     create_card_header("About Us")
     # Display the custom styles in Streamlit
-    st.markdown(header_style, unsafe_allow_html=True)
+    #st.markdown(header_style, unsafe_allow_html=True)
     with col:
         # Add the description 
         st.markdown("""
