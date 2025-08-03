@@ -645,6 +645,45 @@ def show_attendance_card(col):
         """, unsafe_allow_html=True)
 
 
+def show_about_us(col):
+    # Set up a blue header style for the card
+    header_style = get_header_style()
+    # Create a card layout with a blue header
+    create_card_header("about us")
+    # Display the custom styles in Streamlit
+    st.markdown(header_style, unsafe_allow_html=True)
+    with col:
+        # Add the description 
+        st.markdown("""
+            <span class="card-footer-text">The WDD-Hi Digital Work Skills project, in partnership with the Hawaii 
+                    State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering
+                    free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential 
+                    digital literacy skills such as using email, browsing the internet, and ensuring online safety.
+                    </br>In our analysis, the regression factors are Attendance Data: Date, Island, Branches, Classes_scheduled, Registered, Attended, and Attend_Rate 
+                    against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, and Total_expense.     
+            """, unsafe_allow_html=True)
+         # End the description 
+        # Add the footer with "Read more about it" and a button
+        st.markdown("""
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">Read more about it</span>
+                    <a href="/attendance" target="_self" class="card-footer-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M24 12l-12-9v5h-12v8h12v5l12-9z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+        
+        # Close the card footer and card div
+        st.markdown("""
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+
+
 def main():
     apply_custom_style(suppress_anchor=True)
     
