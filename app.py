@@ -686,8 +686,7 @@ text-decoration-style: initial;text-decoration-color: initial;word-spacing:
 <span class=GramE><span style='background:white'><span style='font-variant-ligatures: normal;
 font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
 text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
-float:none;word-spacing:0px'>authored</span></span><span style='background:
-white'> by Burt <span class=SpellE>Lum</span>, Hawaii Digital Equity Office, Hawaii
+float:none;word-spacing:0px'>Authored by Burt <span class=SpellE>Lum</span>, Hawaii Digital Equity Office, Hawaii
 Broadband Digital Equity Office (HBDEO) posted the challenges at 2024 Hawaii
 State Annual Code Challenge&nbsp;</span></span></span><a
 href="https://hacc.hawaii.gov/past-event-2024/" target="_blank"
