@@ -654,10 +654,202 @@ def show_about_us(col):
     with col:
         # Add the description 
         st.markdown("""
-            <span class="card-footer-text">Digital Equity Plan https://broadband.hawaii.gov/digitalequityplan/   VISION: All who call Hawai‘i home 
-            have the confidence, ability, and pathways to thrive in a digital world. MISSION To design and enable systems that perpetually empower our people 
-            through access to digital resources.   
-            </br> As one of challenges in the Hawaii State Annual Code Challenge https://hacc.hawaii.gov/past-event-2024/ Burt Lum is the lead.      
+            <span class="card-footer-text">
+            
+            
+         
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif;color:#333333;
+background:white'>Hawaii Digital Equity Plan&nbsp;</span></span><a
+href="https://broadband.hawaii.gov/digitalequityplan/" target="_blank"
+style='box-sizing: border-box;scrollbar-width: thin;scrollbar-color: transparent transparent;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;text-align:
+start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+style='font-family:"Arial",sans-serif;color:#0068C9;background:white'>https://broadband.hawaii.gov/digitalequityplan/</span></a><span
+style='font-family:"Arial",sans-serif;color:#333333;background:white'><span
+style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>&nbsp;VISION: All who call Hawai i home have the confidence,
+ability, and pathways to thrive in a digital world. MISSION <span class=GramE>To</span>
+design and enable systems that perpetually empower our people through access to
+digital resources.</span></span><span style='font-family:"Arial",sans-serif;
+color:#333333'><br style='box-sizing: border-box;scrollbar-width: thin;
+scrollbar-color: transparent transparent;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+word-spacing:0px'>
+<br style='box-sizing: border-box;scrollbar-width: thin;scrollbar-color: transparent transparent;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;text-align:
+start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+0px'>
+<span class=GramE><span style='background:white'><span style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>authored</span></span><span style='background:
+white'> by Burt <span class=SpellE>Lum</span>, Hawaii Digital Equity Office, Hawaii
+Broadband Digital Equity Office (HBDEO) posted the challenges at 2024 Hawaii
+State Annual Code Challenge&nbsp;</span></span></span><a
+href="https://hacc.hawaii.gov/past-event-2024/" target="_blank"
+style='box-sizing: border-box;scrollbar-width: thin;scrollbar-color: transparent transparent;
+font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;text-align:
+start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+style='font-family:"Arial",sans-serif;color:#0068C9;background:white'>https://hacc.hawaii.gov/past-event-2024/</span></a><span
+style='font-family:"Arial",sans-serif;color:#333333;background:white'><o:p></o:p></span></p>
+
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+float:none;word-spacing:0px'>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><b style='mso-bidi-font-weight:normal'>Challenge Title:
+&quot;Building a Digital Equity Dashboard for Hawaii&quot;<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><b style='mso-bidi-font-weight:normal'>Challenge
+Description:</b> Design and develop a comprehensive digital equity dashboard
+that provides real-time data and insights into the state of digital equity
+across Hawaii. This dashboard should be accessible to both policymakers and the
+general public, enabling them to track progress, identify areas of need, and
+evaluate the effectiveness of ongoing digital equity initiatives.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><b style='mso-bidi-font-weight:normal'>Data Resources<o:p></o:p></b></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>State Digital Equity <u><span
+     style='color:#1155CC'><a
+     href="https://broadband.hawaii.gov/wp-content/uploads/2024/03/HawaiiDE-Plan-022924-V2.pdf"><span
+     style='color:#1155CC'>Plan</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Digital Economy <u><span style='color:#1155CC'><a
+     href="https://app.box.com/s/4i4qoiwvh2gmvcnepqczpwww3fsvan1a"><span
+     style='color:#1155CC'>Study</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Digital Skills for Workforce <u><span
+     style='color:#1155CC'><a
+     href="https://app.box.com/s/n41dochv1v088tc3usl8mb8yca702xoy"><span
+     style='color:#1155CC'>Plan</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Remote Work in Hawaii <u><span
+     style='color:#1155CC'><a
+     href="https://docs.google.com/document/d/1dMeVAT6d2kZArUZ9P61IxlTllBZXzjjfaFH9mgKoeRk/edit?usp=sharing"><span
+     style='color:#1155CC'>Study</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Digital Literacy and Readiness <u><span
+     style='color:#1155CC'><a
+     href="https://app.box.com/s/j8m2url2gh0gs8i0iajr04mqfktnv2qx"><span
+     style='color:#1155CC'>Study</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Digital Equity Project Tracker <u><span
+     style='color:#1155CC'><a
+     href="https://histategis.maps.arcgis.com/apps/instant/basic/index.html?appid=675cd1c7b622456fab5d73955a52d4e5"><span
+     style='color:#1155CC'>Viewer</span></a></span></u> <o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Digital Equity Project Tracker <u><span
+     style='color:#1155CC'><a
+     href="https://histategis.maps.arcgis.com/apps/dashboards/2f353a6f35b94438b475126aa0f6f07e"><span
+     style='color:#1155CC'>Dashboard</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Connectivity Summary <u><span
+     style='color:#1155CC'><a
+     href="https://www.arcgis.com/apps/dashboards/33d942b438d448e59d389be6d4e3953e"><span
+     style='color:#1155CC'>Dashboard</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>HBDEO Open Data <u><span style='color:#1155CC'><a
+     href="https://opendata.hawaii.gov/organization/hbdeo"><span
+     style='color:#1155CC'>Portal</span></a></span></u> <o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Rural Health Disparities <u><span
+     style='color:#1155CC'><a
+     href="https://uhero.hawaii.edu/rural-health-disparities-in-hawaii/"><span
+     style='color:#1155CC'>Report</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'><span class=SpellE>Ookla</span> Speed Test <u><span
+     style='color:#1155CC'><a
+     href="https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Q2_2024_Ookla_Open_Data_for_Hawaii_WFL1/FeatureServer"><span
+     style='color:#1155CC'>Open Data</span></a></span></u> (REST API, 2nd
+     Quarter 2024)<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Download <span class=SpellE>Ookla</span>
+     Speed Test data <u><span style='color:#1155CC'><a
+     href="https://ookla-open-data.s3.amazonaws.com/shapefiles/performance/type=fixed/year=2024/quarter=2/2024-04-01_performance_fixed_tiles.zip"><span
+     style='color:#1155CC'>Open Data</span></a></span></u> (fixed/wired)
+     (Shapefile, 2nd Quarter 2024)<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Download <span class=SpellE>Ookla</span> Speed
+     Test data <u><span style='color:#1155CC'><a
+     href="https://ookla-open-data.s3.amazonaws.com/shapefiles/performance/type=mobile/year=2024/quarter=2/2024-04-01_performance_mobile_tiles.zip"><span
+     style='color:#1155CC'>Open Data</span></a></span></u> (mobile/wireless)
+     (Shapefile, 2nd Quarter 2024)<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'><u><span style='color:#1155CC'><a
+     href="https://census.hawaii.gov/acs/acs-2020/"><span style='color:#1155CC'>Census
+     data tables for <span class=SpellE>Hawai&#699;i</span></span></a></span></u>,
+     including demographic, housing, education, disability, ethnicity, computer
+     and Internet access<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'><u><span style='color:#1155CC'><a
+     href="https://www.policymap.com/newmaps/e/hawaii"><span class=SpellE><span
+     style='color:#1155CC'>PolicyMap</span></span></a></span></u> (request a
+     free <u><span style='color:#1155CC'><a
+     href="https://docs.google.com/forms/d/e/1FAIpQLSf2qxGAuPLaAO8BN2KCEPhZDBVXxHTHmGGNaFlRDnxDhTfAVA/viewform?usp=sf_link"><span
+     class=SpellE><span style='color:#1155CC'>PolicyMap</span></span><span
+     style='color:#1155CC'> account</span></a></span></u>): variety of data,
+     including demographic, income, housing, education, health, and computer
+     and Internet access data<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Census Data for the Digital Equity Act <u><span
+     style='color:#1155CC'><a
+     href="https://www.census.gov/programs-surveys/community-resilience-estimates/partnerships/ntia/digital-equity.html"><span
+     style='color:#1155CC'>Population Viewer</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Microsoft Power BI <u><span
+     style='color:#1155CC'><a
+     href="https://app.powerbi.com/view?r=eyJrIjoiM2JmM2QxZjEtYWEzZi00MDI5LThlZDMtODMzMjhkZTY2Y2Q2IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9"><span
+     style='color:#1155CC'>Digital Equity Viewer</span></a></span></u><o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:12.0pt;line-height:115%;mso-list:
+     l1 level1 lfo1'>UHERO<u><span style='color:#1155CC'><a
+     href="https://docs.google.com/document/d/1nyntJV_9takBG0RdQVHpfAILuRc_sb24VvkkZKx1MvY/edit?tab=t.0"><span
+     style='color:#1155CC'> Work from Home Locations</span></a></span></u><o:p></o:p></li>
+</ol>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><b style='mso-bidi-font-weight:normal'>Addition data resources
+after the HACC<o:p></o:p></b></p>
+
+<ol style='margin-top:0in' start=19 type=1>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Waipahu Community School for Adults Quarter
+     Digital Literacy Grant Report- July-September 2024 <o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Waipahu Community School for Adults Quarter
+     Digital Literacy Grant Report- October 1 - December 31, 2024<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Hawaii State Public Library System Monthly
+     Report for WDD-Hi Digital Work Skills Project August, 2024<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Hawaii State Public Library System Monthly
+     Report for WDD-Hi Digital Work Skills Project September 2024<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Hawaii State Public Library System Monthly
+     Report for WDD-Hi Digital Work Skills Project, January 2025 <o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Hawaii State Public Library System Monthly
+     Report for WDD-Hi Digital Work Skills Project, February 2025<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'>Hawaii State Public Library System Monthly
+     Report for WDD-Hi Digital Work Skills Project, March 2025<o:p></o:p></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+     115%;mso-list:l1 level1 lfo1'><a
+     href="https://www.fcc.gov/ecfs/search/search-filings">https://www.fcc.gov/ecfs/search/search-filings</a></li>
+</ol>
+
+
+
+            
             """, unsafe_allow_html=True)
          # End the description 
         # Add the footer with "Read more about it" and a button
