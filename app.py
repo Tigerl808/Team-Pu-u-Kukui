@@ -654,7 +654,7 @@ def show_about_us(col):
     with col:
         # Add the description 
         st.markdown("""
-            <span class="card-footer-text"><a href="https://broadband.hawaii.gov/digitalequityplan/">Digital Equity Plan </a> VISION: All who call Hawai‘i home 
+            <span class="card-footer-text">Digital Equity Plan https://broadband.hawaii.gov/digitalequityplan/   VISION: All who call Hawai‘i home 
             have the confidence, ability, and pathways to thrive in a digital world. MISSION To design and enable systems that perpetually empower our people 
             through access to digital resources.   
             </br> As one of challenges in the Hawaii State Annual Code Challenge https://hacc.hawaii.gov/past-event-2024/ Burt Lum is the lead.      
