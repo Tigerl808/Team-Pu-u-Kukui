@@ -586,22 +586,21 @@ def show_survey_results_card(col):
 def show_attendance_card(col):
     # Set up a blue header style for the card
     header_style = get_header_style()
-    # Add the description 
-    st.markdown("""
-        <span class="card-footer-text">The WDD-Hi Digital Work Skills project, in partnership with the Hawaii 
-                    State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering
-                    free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential 
-                    digital literacy skills such as using email, browsing the internet, and ensuring online safety.
-                    </br>In our analysis, the regression factors are Attendance Data: Date, Island, Branches, Classes_scheduled, Registered, Attended, and Attend_Rate 
-                    against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, and Total_expense.     
-        """, unsafe_allow_html=True)
-         # End the description 
-
     with col:
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         # Create a card layout with a blue header
         create_card_header("HSPLS Digital Literacy Classes Attendance")
+        # Add the description 
+        st.markdown("""
+            <span class="card-footer-text">The WDD-Hi Digital Work Skills project, in partnership with the Hawaii 
+                    State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering
+                    free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential 
+                    digital literacy skills such as using email, browsing the internet, and ensuring online safety.
+                    </br>In our analysis, the regression factors are Attendance Data: Date, Island, Branches, Classes_scheduled, Registered, Attended, and Attend_Rate 
+                    against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, and Total_expense.     
+            """, unsafe_allow_html=True)
+         # End the description 
       
         df_total = fetch_attendance_data()
 
