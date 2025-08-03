@@ -712,7 +712,7 @@ def main():
     show_device_access_card(tab4)
     show_user_feedback_card(tab4)
     
-   # show_about_us(tab5)
+    show_about_us(tab5)
 
 if __name__ == "__main__":
     main()
