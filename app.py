@@ -584,6 +584,8 @@ def show_survey_results_card(col):
         """, unsafe_allow_html=True)
         
 def show_attendance_card(col):
+    # Set up a blue header style for the card
+    header_style = get_header_style()
     # Add the description 
     st.markdown("""
         <div class="card-footer">
@@ -595,8 +597,6 @@ def show_attendance_card(col):
                     against Budget categories: Peronnel, Professional_Contractual, Travel, Marketing_Outreach, Indirect, Hardware, and Total_expense.     
         """, unsafe_allow_html=True)
          # End the description 
-    # Set up a blue header style for the card
-    header_style = get_header_style()
 
     with col:
         # Display the custom styles in Streamlit
