@@ -654,11 +654,10 @@ def show_about_us(col):
     with col:
         # Add the description 
         st.markdown("""
-            <span class="card-footer-text">The WDD-Hi Digital Work Skills project, in partnership with the Hawaii 
-                    State Public Library System (HSPLS), launched classes in 2023- 2024 with the mission to bridge the digital divide by offering
-                    free basic computer skills workshops at library branches across the state. These classes aim to equip participants with essential 
-                    digital literacy skills such as using email, browsing the internet, and ensuring online safety.
-                    </br>Burt Lum is the lead.      
+            <span class="card-footer-text"><a href="https://broadband.hawaii.gov/digitalequityplan/">Digital Equity Plan </a> VISION: All who call Hawai‘i home 
+            have the confidence, ability, and pathways to thrive in a digital world. MISSION To design and enable systems that perpetually empower our people 
+            through access to digital resources.   
+            </br> As one of challenges in the Hawaii State Annual Code Challenge https://hacc.hawaii.gov/past-event-2024/ Burt Lum is the lead.      
             """, unsafe_allow_html=True)
          # End the description 
         # Add the footer with "Read more about it" and a button
